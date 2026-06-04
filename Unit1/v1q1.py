@@ -25,3 +25,5 @@ print(linear_search(items, target))
 items = ['bed', 'blue jacket', 'red shirt', 'hunny']
 target = 'red balloon'
 print(linear_search(items, target))
+
+#Example Output:

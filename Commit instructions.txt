@@ -1,0 +1,7 @@
+cd C:\Users\Julia\CodepathModules
+
+git status
+
+git add .
+git commit -m ""
+git push

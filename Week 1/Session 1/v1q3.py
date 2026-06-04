@@ -6,27 +6,27 @@
 def tiggerfy(word):
 	changed = word.lower()
 	for index in range(len(changed)):
-        if changed[index] == "t":
-            changed = changed.replace("t", "")
-        elif changed[index] == "i":
+          if changed[index] == "t":
+              changed = changed.replace("t", "")
+          elif changed[index] == "i":
             changed = changed.replace("i", "")
-        elif changed[index:index+2] == "gg":
+          elif changed[index:index+2] == "gg":
             changed = changed.replace("gg", "")
-        elif changed[index:index+2] == "er":
+          elif changed[index:index+2] == "er":
             changed = changed.replace("er", "")
-        else:
+          else:
             continue
-    return changed
+          return changed
 #Example Usage:
 
 word = "Trigger"
-tiggerfy(word)
+print(tiggerfy(word))
 
 word = "eggplant"
-tiggerfy(word)
+print(tiggerfy(word))
 
 word = "Choir"
-tiggerfy(word)
+print(tiggerfy(word))
 #Example Output:
 
 #"r"

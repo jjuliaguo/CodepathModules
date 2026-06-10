@@ -11,7 +11,25 @@
 # Assume 0 <= i <= len(pile1) - 1 and 0 <= j <= len(pile2) - 1.
 
 def good_pairs(pile1, pile2, k):
-	pass
+
+	"""
+	Understand:
+    
+	traverse through 2 integer arrays
+	valid if pile1 is div by pile2[j] * k: (pile1[i] % (pile2[j] * k) == 0)
+	implement a counter to count the number of good pairs (returns this)
+	
+	Remember: 
+	
+	0 mod anything == 0
+	any number mod 1 == 0
+	"""
+	count = 0
+	for i in range(len(pile1)):
+		for j in range(len(pile2)):
+			if pile1[i] % (pile2[j] * k) == 0:
+				count += 1
+	return count
 
 #Example Usage:
 

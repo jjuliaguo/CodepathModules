@@ -8,8 +8,33 @@
 #Assume n = len(vegetable_patch) and m = len(vegetable_patch[0]). 
 # 0 <= i < n and 0 <= j < m.
 
+from itertools import count
+
+
 def harvest(vegetable_patch):
-	pass
+    """"
+    count = 0
+      
+    for row in range(len(vegetable_patch)):
+        for col in range(len(vegetable_patch[0])):
+            if vegetable_patch[row][col] == 'c':
+                count += 1
+                
+    return count
+    """
+
+# Could also try using hashset
+
+    carrots = {}
+    count = 0
+
+    for key in carrots:
+        if key == 'c':
+            count += 1
+        else: 
+            count = 1
+    
+    return count
 
 # Example Usage:
 

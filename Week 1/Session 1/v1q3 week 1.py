@@ -16,6 +16,8 @@ def tiggerfy(word):
 
 #Previous solution
 
+#replace() replaces all occurrences so u don't need a for loop
+
 """
 for index in range(len(changed)):
   if changed[index] == "t":

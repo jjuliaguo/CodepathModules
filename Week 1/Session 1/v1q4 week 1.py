@@ -1,4 +1,6 @@
-#Given an array nums with n integers, write a function non_decreasing() that checks 
+#Question 4: Non Decreasing Array
+# 
+# Given an array nums with n integers, write a function non_decreasing() that checks 
 # if nums could become non-decreasing by modifying at most one element.
 
 #We define an array is non-decreasing if nums[i] <= nums[i + 1] holds for every i (0-based) 
@@ -6,7 +8,7 @@
 
 def non_decreasing(nums):
 	countOfBigger = 0
-	for i in range(len(nums) - 1):
+	for i in range(len(nums) - 1): #should be -1 not -2 since the last number not included
 		if nums[i] >= nums[i+1]: #is this = or strictly
 			countOfBigger += 1
 	if countOfBigger > 1:

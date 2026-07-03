@@ -1,4 +1,6 @@
 #Question 5: Missing Clues
+
+#TLDR: this was lowk hard to understand the question
 # 
 # Christopher Robin set up a scavenger hunt for Pooh, 
 # but it's a blustery day and several hidden clues have blown away. 
@@ -36,6 +38,8 @@ def find_missing_clues(clues, lower, upper):
 		
 	#this part has to be outside the loop since we want to check the last clue 
 	# with the upper bound
+	#The loop sees between terms, but this is a term vs. upper (not another term)
+	
 	if clues[-1] < upper: #REMEMBER: -1 is the last index here
 		result.append([clues[-1] + 1, upper])
 	

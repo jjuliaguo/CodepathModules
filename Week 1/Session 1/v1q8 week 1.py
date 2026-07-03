@@ -9,9 +9,28 @@
 # In other words, we want to find the largest value in every contiguous 3 x 3 matrix 
 # in grid.
 
-def local_maximums(grid):
-	pass
+"""
+Understand:
 
+Question: can we assume that n x n > 3x3
+Valid when the middle number of 3 is the largest local_maxes[i][j]
+Hardcode: the 3x3 matrix that is centered (fixed)
+Within 3x3, find the largest value and assign it to local maxes array
+- > think abt how to store index for the local_maxes (variables or no?)
+
+Returns an (n-2) x (n-2) matrix 
+
+
+"""
+
+def local_maximums(grid):
+	smallerRow = 0
+    smallerCol = 0
+    result = []
+
+    for row in range(0, len(grid)-2): #should be -2 because 4-3 = 1 but 1 not included
+        for col in range(0, len(grid[0])-2):
+             temp2d = grid[]
 
 # Example Usage:
 
@@ -21,7 +40,7 @@ grid = [
 	[8, 2, 6, 4],
 	[6, 2, 2, 2]
 ]
-local_maximums(grid)
+print(local_maximums(grid))
 
 grid = [
 	[1, 1, 1, 1, 1],
@@ -30,7 +49,7 @@ grid = [
 	[1, 1, 1, 1, 1],
 	[1, 1, 1, 1, 1]
 ]
-local_maximums(grid)
+print(local_maximums(grid))
 # Example Output:
 
 # [[9, 9], [8, 6]]

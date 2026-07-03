@@ -1,5 +1,7 @@
 #Question 7:
 # 
+#TLDR: this was rlly easy
+
 # Eeyore has collected two piles of sticks to rebuild his house and needs to
 # choose pairs of sticks whose lengths are the right proportion. 
 

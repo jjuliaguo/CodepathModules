@@ -20,8 +20,8 @@ def find_treasure_indices(gold_amounts, target):
     for index, value in enumerate(gold_amounts):
         remainder = target - value
         if remainder in gold_map:
-            result.append(index)
             result.append(gold_map[remainder]) #if order of indexes don't matter
+            result.append(index)
         gold_map[value] = index
 
     return result

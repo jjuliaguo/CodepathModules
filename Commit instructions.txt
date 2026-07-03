@@ -1,4 +1,5 @@
-cd C:\Users\Julia\CodepathModules
+cd C:\Users\Julia\CodepathModules (adds everything in CodepathModules)
+cd "C:\Users\Julia\CodepathModules\Week 1" (adds all changes in Week 1 folder)
 
 git status
 

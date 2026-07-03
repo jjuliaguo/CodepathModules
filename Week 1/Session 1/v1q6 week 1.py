@@ -12,7 +12,7 @@ from itertools import count
 
 
 def harvest(vegetable_patch):
-    """"
+
     count = 0
       
     for row in range(len(vegetable_patch)):
@@ -21,10 +21,11 @@ def harvest(vegetable_patch):
                 count += 1
                 
     return count
-    """
+    
 
-# Could also try using hashset
-
+# Dont need a hashmap because it tracks more than necessary
+# We just need to count the c's and dont need to know where the c's are
+"""
     carrots = {}
     count = 0
 
@@ -35,6 +36,7 @@ def harvest(vegetable_patch):
             count = 1
     
     return count
+"""
 
 # Example Usage:
 
